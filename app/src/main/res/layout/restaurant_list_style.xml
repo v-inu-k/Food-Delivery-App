@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        app:cardCornerRadius="15dp"
+        android:padding="19dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Restaurant_Logo"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/Restaurant_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/Restaurant_Logo"
+                android:text="Restaurant Name"
+                android:textColor="@color/salmon"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Restaurant_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Restaurant_Name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/Restaurant_Logo"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/dark_gray2"
+                android:textSize="13sp"
+                android:text="Restaurant details go here. Restaurant details go here. Restaurant details go here. Restaurant details go here. Restaurant details go here."/>
+            />
+            <ImageView
+                android:id="@+id/rating_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_baseline_stars_24"
+                android:layout_below="@id/Restaurant_Address"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/Restaurant_Logo"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Restaurant_rating"
+                android:layout_below="@+id/Restaurant_Address"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rating_icon"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/dark_gray2"
+                android:textSize="12sp"
+                android:text="4.8"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Bowl\'d</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todays_special">Today\'s Special</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="Browse">Browse</string>
+    <string name="Profile">Profile</string>
+    <string name="Cart">Cart</string>
+    <string name="Account">Account</string>
+    <string name="login">Login</string>
+    <string name="Register">Register</string>
+    <string name="Basket">Basket</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="Login">Login</string>
+    <string name="username">Username</string>
+    <string name="email_address">Email Address</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="Name">Name</string>
+    <string name="LOGIN">LOGIN</string>
+</resources>

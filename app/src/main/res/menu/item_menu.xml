@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/nav_Browse"
+        android:icon="@drawable/ic_browse"
+        android:title="Browse" />
+
+    <item android:id="@+id/nav_restaurant"
+        android:icon="@drawable/ic_restaurant"
+        android:title="Restaurants" />
+
+    <item android:id="@+id/nav_Basket"
+        android:icon="@drawable/ic_cart"
+        android:title="Basket" />
+
+    <item android:id="@+id/nav_Account"
+        android:icon="@drawable/ic_profile"
+        android:title="Account" />
+
+</menu>

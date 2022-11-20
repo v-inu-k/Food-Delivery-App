@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        app:cardCornerRadius="15dp"
+        android:padding="19dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Order_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="#134656"
+                android:textColor="@color/salmon"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/Total_Order_Price"
+                android:layout_below="@id/Order_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Total Order Price"
+                android:textColor="@color/salmon"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Order_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/Total_Order_Price"
+                android:text="Date: 12/10/2022"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark_gray2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Order_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Order_Date"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/Total_Order_Price"
+                android:text="time: 10:35"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark_gray2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Total_Order_Price"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="Total Items: 5"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Quantity"
+                android:layout_marginLeft="12dp"
+                android:text="Chicken,\nRice,\nSalad,\nDrink,\nDessert"
+                android:textAlignment="textStart"
+                android:textColor="@color/dark_gray2"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

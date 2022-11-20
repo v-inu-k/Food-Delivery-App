@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:padding="15dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Food_Image"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/Food_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/Food_Image"
+                android:fontFamily="@font/bebas_neue"
+                android:text="Teriyaki Chicken"
+                android:textColor="@color/salmon"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Food_Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Food_Name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/Food_Image"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/dark_gray2"
+                android:textSize="11sp"
+                android:text="Details of Food Item go here. It could be tasty or maybe not even"/>
+            />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
